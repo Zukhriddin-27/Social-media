@@ -259,7 +259,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/1.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -269,7 +269,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/2.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -279,7 +279,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/3.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -289,7 +289,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/4.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -299,7 +299,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/5.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -309,7 +309,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/6.jpg)` }}
               >
                 <div className='active'></div>
               </div>
@@ -319,7 +319,7 @@ export default function Profile() {
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
-                style={{ backgroundImage: `url(/assets/img/profile.jpg)` }}
+                style={{ backgroundImage: `url(/assets/img/7.jpg)` }}
               >
                 <div className='active'></div>
               </div>

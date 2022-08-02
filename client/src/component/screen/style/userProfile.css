@@ -225,7 +225,7 @@ header {
 
 #profile-pic img {
   width: 180px;
-  height: 1px;
+  height: 180px;
   object-fit: cover;
   object-position: 50% 100%;
 }
@@ -241,7 +241,7 @@ header {
 
 #m-btns {
   position: absolute;
-  right: 56px;
+  right: 100px;
   bottom: 20px;
   width: 211px;
 }
