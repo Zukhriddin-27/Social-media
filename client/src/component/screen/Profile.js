@@ -241,7 +241,7 @@ export default function Profile() {
               <div className='m-btn' onClick={() => setEdit(true)}>
                 <i className='fas fa-cog'> </i>
 
-                <p>Edit</p>
+                <span>Edit</span>
               </div>
             </div>
           </div>
