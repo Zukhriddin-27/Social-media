@@ -242,7 +242,7 @@ header {
 
 #m-btns {
   position: absolute;
-  left: 600px;
+  right: 150px;
   bottom: 20px;
   width: 211px;
 }
