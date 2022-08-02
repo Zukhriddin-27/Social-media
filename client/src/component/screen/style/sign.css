@@ -459,6 +459,13 @@ input {
     top: 5%;
     transform: translate(-50%, 0);
   }
+  .models_content {
+    border-radius: 20px;
+    width: 450px;
+    padding: 30px;
+    background: #fff;
+    margin: 100px auto;
+  }
 }
 
 @media (max-width: 570px) {

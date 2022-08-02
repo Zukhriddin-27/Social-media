@@ -233,9 +233,13 @@ export default function Profile() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div id='edit-profile' onClick={() => setEdit(true)}>
-            <img src='/assets/settings.png' />
+            <div className='td'>
+              <div className='m-btn' onClick={() => setEdit(true)}>
+                <i className='fas fa-cog'> </i>
+
+                <p>Edit</p>
+              </div>
+            </div>
           </div>
         </div>
         <div id='black-grd'></div>
@@ -428,20 +432,8 @@ export default function Profile() {
 
                       <div className='description'>{item.title}</div>
 
-                      <div
-                        className='post'
-                        style={{
-                          height: 'auto',
-                        }}
-                      >
-                        <img
-                          style={{
-                            width: '100%',
-                            height: 'auto',
-                          }}
-                          src={item.photo}
-                          alt=''
-                        />
+                      <div className='post'>
+                        <img src={item.photo} alt='' />
                       </div>
 
                       <div className='reaction'>
