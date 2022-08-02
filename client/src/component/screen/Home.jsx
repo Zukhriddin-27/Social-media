@@ -754,10 +754,10 @@ export default function Home() {
                     <div className='svg'>
                       <img src='/assets/svg/care.svg' alt='' />
                     </div>
-                    <Link to='#'>{item.likes.length}</Link>
+                    <Link to='#'>{data ? item.likes.length : '0'}</Link>
                   </div>
                   <div className='comment_length'>
-                    <p>{item.comments.length} Comments</p>
+                    <p>{data ? item.comments.length : '0'} Comments</p>
                   </div>
                 </div>
 

@@ -27,6 +27,7 @@ export default function Profile() {
 
         setData(result.posts)
       })
+    //eslint-disable-next-line
   }, [])
 
   const likePost = (id) => {
@@ -210,7 +211,9 @@ export default function Profile() {
               <div className='tb' id='m-btns'>
                 <div className='td'>
                   <div className='m-btn'>
-                    <i className=''>{profile.user.followers.length}</i>
+                    <i className=''>
+                      {profile ? profile.user.followers.length : '0'}
+                    </i>
                     {showFollow ? (
                       <span onClick={() => followUser()}> Follow</span>
                     ) : (
@@ -220,7 +223,9 @@ export default function Profile() {
                 </div>
                 <div className='td'>
                   <div className='m-btn'>
-                    <i className=''>{profile.user.following.length}</i>
+                    <i className=''>
+                      {profile ? profile.user.following.length : '0'}
+                    </i>
                     <span> Privacy</span>
                   </div>
                 </div>
@@ -407,10 +412,14 @@ export default function Profile() {
                                   <img src='/assets/svg/care.svg' alt='' />
                                 </div>
 
-                                <Link to='#'>{item.likes.length}</Link>
+                                <Link to='#'>
+                                  {data ? item.likes.length : '0'}
+                                </Link>
                               </div>
                               <div className='comment_length'>
-                                <p>{item.comments.length} Comments</p>
+                                <p>
+                                  {data ? item.comments.length : '0'} Comments
+                                </p>
                               </div>
                             </div>
 

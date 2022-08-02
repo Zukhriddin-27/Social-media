@@ -696,10 +696,10 @@ export default function Profile() {
                     <div className='svg'>
                       <img src='/assets/svg/care.svg' alt='' />
                     </div>
-                    <Link to='#'>{item.likes.length}</Link>
+                    <Link to='#'>{profile ? item.likes.length : '0'}</Link>
                   </div>
                   <div className='comment_length'>
-                    <p>{item.comments.length} Comments</p>
+                    <p>{profile ? item.comments.length : '0'} Comments</p>
                   </div>
                 </div>
 

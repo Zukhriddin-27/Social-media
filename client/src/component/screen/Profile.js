@@ -157,6 +157,8 @@ export default function Profile() {
           console.log(err)
         })
     }
+
+    //eslint-disable-next-line
   }, [image])
   const updatePhoto = (file) => {
     setImage(file)
@@ -211,7 +213,9 @@ export default function Profile() {
           <div className='tb' id='m-btns'>
             <div className='td'>
               <div className='m-btn'>
-                <i className='material-icons'>{profile.length}</i>
+                <i className='material-icons'>
+                  {profile ? profile.length : '0'}
+                </i>
                 <span> post</span>
               </div>
             </div>
@@ -432,8 +436,20 @@ export default function Profile() {
 
                       <div className='description'>{item.title}</div>
 
-                      <div className='post'>
-                        <img src={item.photo} alt='' />
+                      <div
+                        className='post'
+                        style={{
+                          height: 'auto',
+                        }}
+                      >
+                        <img
+                          style={{
+                            width: '100%',
+                            height: 'auto',
+                          }}
+                          src={item.photo}
+                          alt=''
+                        />
                       </div>
 
                       <div className='reaction'>
@@ -448,10 +464,12 @@ export default function Profile() {
                             <img src='/assets/svg/care.svg' alt='' />
                           </div>
 
-                          <Link to='#'>{item.likes.length}</Link>
+                          <Link to='#'>
+                            {profile ? item.likes.length : '0'}
+                          </Link>
                         </div>
                         <div className='comment_length'>
-                          <p>{item.comments.length} Comments</p>
+                          <p>{profile ? item.comments.length : '0'} Comments</p>
                         </div>
                       </div>
 
