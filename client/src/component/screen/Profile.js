@@ -210,7 +210,13 @@ export default function Profile() {
         <div id='profile-d'>
           <div id='profile-pic'>
             {/* eslint-disable-next-line */}
-            <img src={state ? state.pic : 'loading'} />
+            <img
+              src={
+                state
+                  ? state.pic
+                  : 'loadhttps://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.pnging'
+              }
+            />
           </div>
           <div id='u-name'>{state ? state.name : 'Loading'}</div>
           <div className='tb' id='m-btns'>
@@ -400,7 +406,11 @@ export default function Profile() {
                 <div className='tb'>
                   <div className='td' id='p-c-i'>
                     <img
-                      src={state ? state.pic : 'loading'}
+                      src={
+                        state
+                          ? state.pic
+                          : 'https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
+                      }
                       alt='Profile pic'
                       className='.globalRoundProfile'
                     />
@@ -429,7 +439,11 @@ export default function Profile() {
                           >
                             {/* eslint-disable-next-line */}
                             <img
-                              src={state ? state.pic : 'loading'}
+                              src={
+                                state
+                                  ? state.pic
+                                  : 'https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
+                              }
                               className='globalRoundProfile'
                             />
                             <span></span>

@@ -567,7 +567,11 @@ export default function Profile() {
                         <div>
                           {/* eslint-disable-next-line */}
                           <img
-                            src={state ? state.pic : 'loading'}
+                            src={
+                              state
+                                ? state.pic
+                                : 'https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
+                            }
                             className='globalRoundProfile'
                           />
                         </div>
