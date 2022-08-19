@@ -44,7 +44,7 @@ export default function SignIn() {
 
   const ourFields = () => {
     // eslint-disable-next-line
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regEmail)) {
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regEmail)) {
       M.toast({
         html: "Email manziligizni to'gri kiriting.",
         classes: ' #ff1744 red accent-3',
