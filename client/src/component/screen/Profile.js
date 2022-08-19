@@ -107,6 +107,7 @@ export default function Profile() {
         console.log(e)
       })
   }
+  // eslint-disable-next-line
   const deletePosts = (postId) => {
     fetch(`/deletepost/${postId}`, {
       method: 'DELETE',
@@ -200,6 +201,7 @@ export default function Profile() {
     <main>
       <div id='profile-upper'>
         <div id='profile-banner-image'>
+          {/* eslint-disable-next-line */}
           <img
             src='https://imagizer.imageshack.com/img921/9628/VIaL8H.jpg'
             alt='Banner image'
@@ -207,6 +209,7 @@ export default function Profile() {
         </div>
         <div id='profile-d'>
           <div id='profile-pic'>
+            {/* eslint-disable-next-line */}
             <img src={state ? state.pic : 'loading'} />
           </div>
           <div id='u-name'>{state ? state.name : 'Loading'}</div>
@@ -264,6 +267,7 @@ export default function Profile() {
                 <div id='u-occ'>I love making applications with Angular.</div>
                 <div id='u-loc'>
                   <i className='fas fa-map-marker-alt'></i>
+                  {/* eslint-disable-next-line */}
                   <a href='#'>Bengaluru</a>, <a href='#'>India</a>
                 </div>
               </div>
@@ -305,12 +309,15 @@ export default function Profile() {
               </div>
               <div>
                 <div className='q-ad-c'>
+                  {/* eslint-disable-next-line */}
                   <a href='#' className='q-ad'>
+                    {/* eslint-disable-next-line */}
                     <img src='https://imagizer.imageshack.com/img923/1849/4TnLy1.png' />
                     <span>My favorite superhero is...</span>
                   </a>
                 </div>
                 <div className='q-ad-c'>
+                  {/* eslint-disable-next-line */}
                   <a href='#' className='q-ad' id='add_q'>
                     <i className='fas fa-plus'></i>
                     <span>Add Answer</span>
@@ -319,8 +326,11 @@ export default function Profile() {
               </div>
             </div>
             <div id='t-box'>
+              {/* eslint-disable-next-line */}
               <a href='#'>Privacy</a> <a href='#'>Terms</a>{' '}
+              {/* eslint-disable-next-line */}
               <a href='#'>Advertising</a> <a href='#'>Ad Choices</a>{' '}
+              {/* eslint-disable-next-line */}
               <a href='#'>Cookies</a>{' '}
               <span id='t-more'>
                 More <i className='fas fa-angle-down'></i>
@@ -417,6 +427,7 @@ export default function Profile() {
                           //   backgroundImage: `url("/assets/img/1.jpg")`,
                           // }}
                           >
+                            {/* eslint-disable-next-line */}
                             <img
                               src={state ? state.pic : 'loading'}
                               className='globalRoundProfile'
@@ -596,6 +607,7 @@ export default function Profile() {
 
                   <div className='globalProfile'>
                     <div>
+                      {/* eslint-disable-next-line */}
                       <img
                         src={state ? state.pic : 'loading'}
                         className='globalRoundProfile'

@@ -5,6 +5,7 @@ import { UserContext } from '../../App'
 import './style/profile.css'
 export default function Profile() {
   const [profile, setProfile] = useState([])
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext)
   const [comment, setComment] = useState(false)
   const [menu, setMenu] = useState(false)
@@ -127,6 +128,7 @@ export default function Profile() {
           <div className='containerr borderNone'>
             <div className='globalProfile'>
               <div>
+                {/* eslint-disable-next-line */}
                 <img
                   src={state ? state.pic : 'loading'}
                   className='globalRoundProfile'
@@ -173,6 +175,7 @@ export default function Profile() {
           <div className='containerr'>
             <div className='mainTitle'>
               <h3 className='padding'>Your Shortcuts</h3>
+              {/* eslint-disable-next-line */}
               <a href='#'>Edit</a>
             </div>
             <div className='globalProfile'>
@@ -221,6 +224,7 @@ export default function Profile() {
 
             <div className='globalProfile'>
               <div>
+                {/* eslint-disable-next-line */}
                 <img
                   src={state ? state.pic : 'loading'}
                   className='globalRoundProfile'
@@ -340,6 +344,7 @@ export default function Profile() {
               </h3>
             </div>
             <div className='bg'>
+              {/* eslint-disable-next-line */}
               <img src={state ? state.pic : 'loading'} />
               <span></span>
             </div>
@@ -446,6 +451,7 @@ export default function Profile() {
         <div className='createPost'>
           <div className='input'>
             <div>
+              {/* eslint-disable-next-line */}
               <img
                 src={state ? state.pic : 'loading'}
                 className='globalRoundProfile'
@@ -620,6 +626,7 @@ export default function Profile() {
                 <div className='title'>
                   <div className='profile'>
                     <div>
+                      {/* eslint-disable-next-line */}
                       <img
                         src={item.postedBy.pic}
                         className='globalRoundProfile'
@@ -747,6 +754,7 @@ export default function Profile() {
                     {item.comments.map((item) => (
                       <div className='old_comment' key={item._id}>
                         <div>
+                          {/* eslint-disable-next-line */}
                           <img
                             src={item.postedBy.pic}
                             className='globalRoundComment '

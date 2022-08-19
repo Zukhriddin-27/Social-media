@@ -1,10 +1,8 @@
 import React from 'react'
-import { useState, useEffect, useContext } from 'react'
-import { UserContext } from '../../App'
+import { useState, useEffect } from 'react'
 
 import M from 'materialize-css'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
 import './style/create.css'
 export default function Create() {
@@ -14,7 +12,6 @@ export default function Create() {
   const [body, setBody] = useState('')
   const [image, setImage] = useState('')
   const [url, setUrl] = useState('')
-  const { state, dispatch } = useContext(UserContext)
 
   useEffect(() => {
     if (url) {

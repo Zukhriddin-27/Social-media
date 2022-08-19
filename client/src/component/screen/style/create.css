@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 96vh;
+  min-height: 100vh;
 }
 ::selection {
   color: #fff;
@@ -18,7 +18,7 @@
 }
 .container_posts {
   width: 688px;
-  height: 82vh;
+  height: 740px;
   overflow: hidden;
   background: #fff;
   border-radius: 10px;
@@ -26,7 +26,6 @@
   box-shadow: 0 12px 28px rgba(6, 5, 5, 0.12);
 }
 .container_posts.active {
-  height: auto;
 }
 .container_posts .wrapper {
   width: 1378px;
@@ -34,6 +33,7 @@
 }
 .container_posts .wrapper section {
   width: 688px;
+
   background: #fff;
 }
 .container_posts img {
@@ -50,7 +50,7 @@
   font-weight: 600;
   padding: 17px 0;
   text-align: center;
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid #bfbfbf;
 }
 .post form {
@@ -195,7 +195,7 @@ form textarea:valid ~ button:hover {
   text-align: center;
   position: relative;
   border-bottom: 1px solid #bfbfbf;
-  width: 90%;
+  width: 100%;
 }
 .audience header .arrow-back {
   position: absolute;

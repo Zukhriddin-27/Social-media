@@ -8,7 +8,9 @@ import Login from './Login'
 import './style/sign.css'
 
 export default function SignIn() {
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext)
+  // eslint-disable-next-line
   const navigate = useNavigate()
   const [mode, setMode] = useState(false)
   const [regName, setRegName] = useState('')
@@ -42,7 +44,7 @@ export default function SignIn() {
 
   const ourFields = () => {
     // eslint-disable-next-line
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regEmail)) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regEmail)) {
       M.toast({
         html: "Email manziligizni to'gri kiriting.",
         classes: ' #ff1744 red accent-3',
@@ -84,6 +86,7 @@ export default function SignIn() {
     if (url) {
       ourFields()
     }
+    // eslint-disable-next-line
   }, [url])
 
   return (
@@ -178,7 +181,11 @@ export default function SignIn() {
               </button>
             </div>
             <img
-              src={state ? state.pic : 'loading'}
+              src={
+                state
+                  ? state.pic
+                  : 'https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
+              }
               className='image'
               alt='user'
             />
@@ -200,7 +207,7 @@ export default function SignIn() {
             </div>
             <div class='containers'>
               <img
-                src='https://res.cloudinary.com/dus2bqcc6/image/upload/v1659189677/photo_2022-07-30_19.01.08_qtdu0q.jpg'
+                src='https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
                 alt='Avatar'
                 class='image'
               />

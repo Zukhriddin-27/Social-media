@@ -25,7 +25,9 @@ export default function Navbar() {
         <>
           <div className='logoSearch' key='1'>
             <div className='logo'>
-              <i className='fab fa-facebook-f'></i>
+              <a href='/'>
+                <i className='fab fa-facebook-f'></i>
+              </a>
             </div>
             <div className='search' onClick={() => setSearchPanel(true)}>
               <div className='svg'>
@@ -64,7 +66,13 @@ export default function Navbar() {
 
           <div className='profileTools'>
             <div className='profile' key='7'>
-              <div className='img'></div>
+              <div>
+                {/* eslint-disable-next-line */}
+                <img
+                  src={state ? state.pic : 'loading'}
+                  className='globalRoundProfile'
+                />
+              </div>
               <Link to='/profile'>
                 <div className='username'>User</div>
               </Link>
@@ -152,6 +160,7 @@ export default function Navbar() {
                   }
                 >
                   <li className='profile_list'>
+                    {/* eslint-disable-next-line */}
                     <img
                       src={item.pic}
                       alt='user image'

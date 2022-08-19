@@ -1,15 +1,15 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+
 import { UserContext } from '../../App'
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import M from 'materialize-css'
 
 function Login(props) {
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext)
   const navigate = useNavigate()
-  const { logEmail, logPassword, setLogEmail, setLogPassword, mode, setMode } =
-    props
+  const { logEmail, logPassword, setLogEmail, setLogPassword } = props
 
   const logData = () => {
     // eslint-disable-next-line

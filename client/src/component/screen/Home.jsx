@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
   const [data, setData] = useState([])
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext)
   const [comment, setComment] = useState(false)
   const [menu, setMenu] = useState(false)
@@ -185,14 +186,22 @@ export default function Home() {
         <div className='sidebars left'>
           <div className='containerr borderNone'>
             <div className='globalProfile'>
-              <div>
-                <img
-                  src={state ? state.pic : 'loading'}
-                  className='globalRoundProfile'
-                />
-              </div>
+              <a href='/profile'>
+                <div>
+                  {/* eslint-disable-next-line */}
+                  <img
+                    src={
+                      state
+                        ? state.pic
+                        : 'https://res.cloudinary.com/dus2bqcc6/image/upload/v1660891415/72-729756_how-to-add-a-new-user-to-your.png-removebg-preview_tokryb.png'
+                    }
+                    className='globalRoundProfile'
+                  />
+                </div>
+              </a>
               <div className='name'>{state ? state.name : 'Loading'}</div>
             </div>
+
             <div className='globalProfile'>
               <div
                 className='globalRoundProfile'
@@ -232,7 +241,6 @@ export default function Home() {
           <div className='containerr'>
             <div className='mainTitle'>
               <h3 className='padding'>Your Shortcuts</h3>
-              <a href='#'>Edit</a>
             </div>
             <div className='globalProfile'>
               <div
@@ -280,6 +288,7 @@ export default function Home() {
 
             <div className='globalProfile'>
               <div>
+                {/* eslint-disable-next-line */}
                 <img
                   src={state ? state.pic : 'loading'}
                   className='globalRoundProfile'
@@ -399,6 +408,7 @@ export default function Home() {
               </h3>
             </div>
             <div className='bg'>
+              {/* eslint-disable-next-line */}
               <img src={state ? state.pic : 'loading'} />
               <span></span>
             </div>
@@ -504,6 +514,7 @@ export default function Home() {
         <div className='createPost'>
           <div className='input'>
             <div>
+              {/* eslint-disable-next-line */}
               <img
                 src={state ? state.pic : 'loading'}
                 className='globalRoundProfile'
@@ -678,6 +689,7 @@ export default function Home() {
                 <div className='title'>
                   <div className='profile'>
                     <div>
+                      {/* eslint-disable-next-line */}
                       <img
                         src={item.postedBy.pic}
                         className='globalRoundProfile'
@@ -805,6 +817,7 @@ export default function Home() {
                     {item.comments.map((item) => (
                       <div className='old_comment' key={item._id}>
                         <div>
+                          {/* eslint-disable-next-line */}
                           <img
                             src={item.postedBy.pic}
                             className='globalRoundComment '
