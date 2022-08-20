@@ -1,4 +1,6 @@
 # Social-media
+##Demo :https://zgramm.herokuapp.com/signin
+
 Description:  MERN stands for MongoDB, Express.js, React.js and Node.js - and combined, these four technologies allow you to build amazing web applications
 This Social Media project will have following features -
 1.	Users can Post their pictures and share it with the world.
@@ -11,5 +13,5 @@ This Social Media project will have following features -
 8.	User can view his profile and others profile
 9.	User an delete his or her post
 
-Demo :https://zgramm.herokuapp.com/signin
+
 
